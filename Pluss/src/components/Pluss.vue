@@ -84,8 +84,8 @@ export default {
     },
     async savePluss() {
       this.saving='disabled'
-     await fetch(`http://127.0.0.1:8000/api/pluss/${this.Pluss.id}`, {
-       method: 'PATCH',
+     await fetch(`http://127.0.0.1:8000/api/pluss/${this.pluss.id}`, {
+       method: 'PUT',
        headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json'
